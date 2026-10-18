@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: currentColor;
+}
+
+svg {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+:root {
+  --font-size-9xl: 9.313rem;
+  --font-size-8xl: 7.451rem;
+  --font-size-7xl: 5.96rem;
+  --font-size-6xl: 4.768rem;
+  --font-size-5xl: 3.815rem;
+  --font-size-4xl: 3.052rem;
+  --font-size-3xl: 2.441rem;
+  --font-size-2xl: 1.953rem;
+  --font-size-xl: 1.563rem;
+  --font-size-lg: 1.25rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.8rem;
+  --font-size-xs: 0.64rem;
+
+  --font-size-vis-lg: 18px;
+  --font-size-vis-md: 16px;
+  --font-size-vis-sm: 14px;
+  --font-size-vis-xs: 12px;
+
+  --font-family-serif: "Merriweather", serif;
+  --font-family-sans: "Merriweather Sans", sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --line-height-title: 1;
+  --line-height-body: 1.5;
+
+  --color-background: #f7f7f7;
+  --color-grid: #aaa;
+  --color-text: #333333;
+  --color-text-muted: #666666;
+  --color-increase: #129664;
+  --color-decline: #ff7939;
+}
+
+body {
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-title);
+  text-wrap: balance;
+}
+
+footer {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+main {
+  margin-block: 4rem;
+}
+
+article {
+  width: min(100% - 2rem, 80rem);
+  margin-inline: auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.intro {
+  display: grid;
+  gap: 1rem;
+}
+
+.chart {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-vis-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.chart text {
+  fill: currentColor;
+}
+
+.chart .axis text {
+  fill: var(--color-text-muted);
+  font-size: var(--font-size-vis-xs);
+}
+
+.chart .axis line {
+  stroke: var(--color-grid);
+}
+
+.chart .arrow__title {
+  font-weight: var(--font-weight-bold);
+}
